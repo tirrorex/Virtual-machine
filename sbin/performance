@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "performance"
+cpupower -c 0-7 frequency-set -g performance

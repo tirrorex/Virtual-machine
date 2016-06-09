@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "disable dual"
+#export XAUTHORITY=/home/zipeldiablo/.Xauthority
+#export DISPLAY=:0
+
+xrandr \
+         --output HDMI2 --off \
+         --output HDMI1 --mode "1920x1200" --rate 60 --primary

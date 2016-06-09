@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" != "win10Perf" ] ; then
+    exit 0
+fi
+# echo switching to simple screen + starting synergy
+# this is not needed for vm to start, so async
+#virsh attach-device $1 /home/zipeldiablo/mouse.xml
+#virsh attach-device $1 /home/zipeldiablo/keyboard.xml
+
+/home/zipeldiablo/sbin/disableDualScreen
+
+/home/zipeldiablo/sbin/synergyStart

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$1" != "win10Perf" ] ; then
+    exit 0
+fi
+echo "prepare"
+# performance mode
+/home/zipeldiablo/sbin/performance

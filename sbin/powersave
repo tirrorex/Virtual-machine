@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "powersaving"
+cpupower -c 1-7 frequency-set -g powersave

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ "$1" != "win10Perf" ] ; then
+    exit 0
+fi
+
+#virsh detach-device $1 /home/zipeldiablo/mouse.xml
+#virsh detach-device $1 /home/zipeldiablo/keyboard.xml
+# powersave mode
+/home/zipeldiablo/sbin/powersave
+# going back to dual screen
+/home/zipeldiablo/sbin/enableDualScreen
+
+# kill synergy
+/home/zipeldiablo/sbin/synergyKill
